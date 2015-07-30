@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8DA5FB91B69FF02004EE830 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA5FB81B69FF02004EE830 /* main.m */; };
+		A8DA5FBC1B69FF02004EE830 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA5FBB1B69FF02004EE830 /* AppDelegate.m */; };
+		A8DA5FBF1B69FF02004EE830 /* CoreDataMantleMoGenMigrations.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8DA5FBD1B69FF02004EE830 /* CoreDataMantleMoGenMigrations.xcdatamodeld */; };
+		A8DA5FC21B69FF02004EE830 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA5FC11B69FF02004EE830 /* MasterViewController.m */; };
+		A8DA5FC51B69FF02004EE830 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA5FC41B69FF02004EE830 /* DetailViewController.m */; };
+		A8DA5FC81B69FF02004EE830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8DA5FC61B69FF02004EE830 /* Main.storyboard */; };
+		A8DA5FCA1B69FF02004EE830 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8DA5FC91B69FF02004EE830 /* Images.xcassets */; };
+		A8DA5FCD1B69FF02004EE830 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8DA5FCB1B69FF02004EE830 /* LaunchScreen.xib */; };
+		A8DA5FD91B69FF02004EE830 /* CoreDataMantleMoGenMigrationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA5FD81B69FF02004EE830 /* CoreDataMantleMoGenMigrationsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8DA5FD31B69FF02004EE830 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8DA5FAB1B69FF02004EE830 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8DA5FB21B69FF02004EE830;
+			remoteInfo = CoreDataMantleMoGenMigrations;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A8DA5FB31B69FF02004EE830 /* CoreDataMantleMoGenMigrations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataMantleMoGenMigrations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8DA5FB71B69FF02004EE830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8DA5FB81B69FF02004EE830 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A8DA5FBA1B69FF02004EE830 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A8DA5FBB1B69FF02004EE830 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A8DA5FBE1B69FF02004EE830 /* CoreDataMantleMoGenMigrations.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataMantleMoGenMigrations.xcdatamodel; sourceTree = "<group>"; };
+		A8DA5FC01B69FF02004EE830 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		A8DA5FC11B69FF02004EE830 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		A8DA5FC31B69FF02004EE830 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		A8DA5FC41B69FF02004EE830 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		A8DA5FC71B69FF02004EE830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A8DA5FC91B69FF02004EE830 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A8DA5FCC1B69FF02004EE830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A8DA5FD21B69FF02004EE830 /* CoreDataMantleMoGenMigrationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataMantleMoGenMigrationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8DA5FD71B69FF02004EE830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8DA5FD81B69FF02004EE830 /* CoreDataMantleMoGenMigrationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataMantleMoGenMigrationsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8DA5FB01B69FF02004EE830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8DA5FCF1B69FF02004EE830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8DA5FAA1B69FF02004EE830 = {
+			isa = PBXGroup;
+			children = (
+				A8DA5FB51B69FF02004EE830 /* CoreDataMantleMoGenMigrations */,
+				A8DA5FD51B69FF02004EE830 /* CoreDataMantleMoGenMigrationsTests */,
+				A8DA5FB41B69FF02004EE830 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8DA5FB41B69FF02004EE830 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8DA5FB31B69FF02004EE830 /* CoreDataMantleMoGenMigrations.app */,
+				A8DA5FD21B69FF02004EE830 /* CoreDataMantleMoGenMigrationsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8DA5FB51B69FF02004EE830 /* CoreDataMantleMoGenMigrations */ = {
+			isa = PBXGroup;
+			children = (
+				A8DA5FBA1B69FF02004EE830 /* AppDelegate.h */,
+				A8DA5FBB1B69FF02004EE830 /* AppDelegate.m */,
+				A8DA5FC01B69FF02004EE830 /* MasterViewController.h */,
+				A8DA5FC11B69FF02004EE830 /* MasterViewController.m */,
+				A8DA5FC31B69FF02004EE830 /* DetailViewController.h */,
+				A8DA5FC41B69FF02004EE830 /* DetailViewController.m */,
+				A8DA5FC61B69FF02004EE830 /* Main.storyboard */,
+				A8DA5FC91B69FF02004EE830 /* Images.xcassets */,
+				A8DA5FCB1B69FF02004EE830 /* LaunchScreen.xib */,
+				A8DA5FBD1B69FF02004EE830 /* CoreDataMantleMoGenMigrations.xcdatamodeld */,
+				A8DA5FB61B69FF02004EE830 /* Supporting Files */,
+			);
+			path = CoreDataMantleMoGenMigrations;
+			sourceTree = "<group>";
+		};
+		A8DA5FB61B69FF02004EE830 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8DA5FB71B69FF02004EE830 /* Info.plist */,
+				A8DA5FB81B69FF02004EE830 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8DA5FD51B69FF02004EE830 /* CoreDataMantleMoGenMigrationsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8DA5FD81B69FF02004EE830 /* CoreDataMantleMoGenMigrationsTests.m */,
+				A8DA5FD61B69FF02004EE830 /* Supporting Files */,
+			);
+			path = CoreDataMantleMoGenMigrationsTests;
+			sourceTree = "<group>";
+		};
+		A8DA5FD61B69FF02004EE830 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8DA5FD71B69FF02004EE830 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8DA5FB21B69FF02004EE830 /* CoreDataMantleMoGenMigrations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8DA5FDC1B69FF02004EE830 /* Build configuration list for PBXNativeTarget "CoreDataMantleMoGenMigrations" */;
+			buildPhases = (
+				A8DA5FAF1B69FF02004EE830 /* Sources */,
+				A8DA5FB01B69FF02004EE830 /* Frameworks */,
+				A8DA5FB11B69FF02004EE830 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreDataMantleMoGenMigrations;
+			productName = CoreDataMantleMoGenMigrations;
+			productReference = A8DA5FB31B69FF02004EE830 /* CoreDataMantleMoGenMigrations.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A8DA5FD11B69FF02004EE830 /* CoreDataMantleMoGenMigrationsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8DA5FDF1B69FF02004EE830 /* Build configuration list for PBXNativeTarget "CoreDataMantleMoGenMigrationsTests" */;
+			buildPhases = (
+				A8DA5FCE1B69FF02004EE830 /* Sources */,
+				A8DA5FCF1B69FF02004EE830 /* Frameworks */,
+				A8DA5FD01B69FF02004EE830 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8DA5FD41B69FF02004EE830 /* PBXTargetDependency */,
+			);
+			name = CoreDataMantleMoGenMigrationsTests;
+			productName = CoreDataMantleMoGenMigrationsTests;
+			productReference = A8DA5FD21B69FF02004EE830 /* CoreDataMantleMoGenMigrationsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8DA5FAB1B69FF02004EE830 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = kanybek;
+				TargetAttributes = {
+					A8DA5FB21B69FF02004EE830 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					A8DA5FD11B69FF02004EE830 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = A8DA5FB21B69FF02004EE830;
+					};
+				};
+			};
+			buildConfigurationList = A8DA5FAE1B69FF02004EE830 /* Build configuration list for PBXProject "CoreDataMantleMoGenMigrations" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8DA5FAA1B69FF02004EE830;
+			productRefGroup = A8DA5FB41B69FF02004EE830 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8DA5FB21B69FF02004EE830 /* CoreDataMantleMoGenMigrations */,
+				A8DA5FD11B69FF02004EE830 /* CoreDataMantleMoGenMigrationsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8DA5FB11B69FF02004EE830 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8DA5FC81B69FF02004EE830 /* Main.storyboard in Resources */,
+				A8DA5FCD1B69FF02004EE830 /* LaunchScreen.xib in Resources */,
+				A8DA5FCA1B69FF02004EE830 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8DA5FD01B69FF02004EE830 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8DA5FAF1B69FF02004EE830 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8DA5FC51B69FF02004EE830 /* DetailViewController.m in Sources */,
+				A8DA5FC21B69FF02004EE830 /* MasterViewController.m in Sources */,
+				A8DA5FBF1B69FF02004EE830 /* CoreDataMantleMoGenMigrations.xcdatamodeld in Sources */,
+				A8DA5FBC1B69FF02004EE830 /* AppDelegate.m in Sources */,
+				A8DA5FB91B69FF02004EE830 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8DA5FCE1B69FF02004EE830 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8DA5FD91B69FF02004EE830 /* CoreDataMantleMoGenMigrationsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8DA5FD41B69FF02004EE830 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8DA5FB21B69FF02004EE830 /* CoreDataMantleMoGenMigrations */;
+			targetProxy = A8DA5FD31B69FF02004EE830 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A8DA5FC61B69FF02004EE830 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8DA5FC71B69FF02004EE830 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A8DA5FCB1B69FF02004EE830 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8DA5FCC1B69FF02004EE830 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8DA5FDA1B69FF02004EE830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A8DA5FDB1B69FF02004EE830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8DA5FDD1B69FF02004EE830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoreDataMantleMoGenMigrations/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A8DA5FDE1B69FF02004EE830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoreDataMantleMoGenMigrations/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A8DA5FE01B69FF02004EE830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CoreDataMantleMoGenMigrationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreDataMantleMoGenMigrations.app/CoreDataMantleMoGenMigrations";
+			};
+			name = Debug;
+		};
+		A8DA5FE11B69FF02004EE830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CoreDataMantleMoGenMigrationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreDataMantleMoGenMigrations.app/CoreDataMantleMoGenMigrations";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8DA5FAE1B69FF02004EE830 /* Build configuration list for PBXProject "CoreDataMantleMoGenMigrations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8DA5FDA1B69FF02004EE830 /* Debug */,
+				A8DA5FDB1B69FF02004EE830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8DA5FDC1B69FF02004EE830 /* Build configuration list for PBXNativeTarget "CoreDataMantleMoGenMigrations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8DA5FDD1B69FF02004EE830 /* Debug */,
+				A8DA5FDE1B69FF02004EE830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A8DA5FDF1B69FF02004EE830 /* Build configuration list for PBXNativeTarget "CoreDataMantleMoGenMigrationsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8DA5FE01B69FF02004EE830 /* Debug */,
+				A8DA5FE11B69FF02004EE830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A8DA5FBD1B69FF02004EE830 /* CoreDataMantleMoGenMigrations.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A8DA5FBE1B69FF02004EE830 /* CoreDataMantleMoGenMigrations.xcdatamodel */,
+			);
+			currentVersion = A8DA5FBE1B69FF02004EE830 /* CoreDataMantleMoGenMigrations.xcdatamodel */;
+			path = CoreDataMantleMoGenMigrations.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A8DA5FAB1B69FF02004EE830 /* Project object */;
+}
