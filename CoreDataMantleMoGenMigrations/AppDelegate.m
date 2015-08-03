@@ -18,6 +18,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    //???
+    [MagicalRecord setupAutoMigratingCoreDataStack];
+    
+    //???
+    //[MagicalRecord setupCoreDataStack];
+    
     // Override point for customization after application launch.
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     MasterViewController *controller = (MasterViewController *)navigationController.topViewController;

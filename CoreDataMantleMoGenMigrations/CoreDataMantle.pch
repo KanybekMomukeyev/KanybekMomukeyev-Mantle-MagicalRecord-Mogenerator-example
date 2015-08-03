@@ -1,0 +1,16 @@
+//
+//  CoreDataMantle.pch
+//  CoreDataMantleMoGenMigrations
+//
+//  Created by kanybek on 8/3/15.
+//  Copyright (c) 2015 kanybek. All rights reserved.
+//
+
+#ifndef CoreDataMantleMoGenMigrations_CoreDataMantle_pch
+#define CoreDataMantleMoGenMigrations_CoreDataMantle_pch
+
+#import <MagicalRecord.h>
+// Include any system fra mework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
