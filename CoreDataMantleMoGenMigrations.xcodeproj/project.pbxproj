@@ -7,21 +7,26 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		A8112B051B6F52C600C5BFAB /* Mogenerator */ = {
+		A8112B0A1B6F571000C5BFAB /* Mogenerator2 */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = A8112B061B6F52C600C5BFAB /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildConfigurationList = A8112B0B1B6F571000C5BFAB /* Build configuration list for PBXAggregateTarget "Mogenerator2" */;
 			buildPhases = (
-				A8112B091B6F52D700C5BFAB /* ShellScript */,
+				A8112B0E1B6F571600C5BFAB /* ShellScript */,
 			);
 			dependencies = (
 			);
-			name = Mogenerator;
-			productName = Mogenerator;
+			name = Mogenerator2;
+			productName = Mogenerator2;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
 		A8112B041B6F524B00C5BFAB /* CoreDataMantleMoGenMigrations.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8112B021B6F524B00C5BFAB /* CoreDataMantleMoGenMigrations.xcdatamodeld */; };
+		A8112B141B6F5A1000C5BFAB /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = A8112B121B6F5A1000C5BFAB /* Event.m */; };
+		A84DB1DB1BC2406500924C45 /* TestTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A84DB1DA1BC2406500924C45 /* TestTVCell.m */; };
+		A84DB1E01BC241D900924C45 /* _Event.m in Sources */ = {isa = PBXBuildFile; fileRef = A84DB1DD1BC241D900924C45 /* _Event.m */; };
+		A84DB1E11BC241D900924C45 /* _Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A84DB1DF1BC241D900924C45 /* _Person.m */; };
+		A85613831B6F942200D8C0DB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A85613811B6F942200D8C0DB /* Person.m */; };
 		A8DA5FB91B69FF02004EE830 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA5FB81B69FF02004EE830 /* main.m */; };
 		A8DA5FBC1B69FF02004EE830 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA5FBB1B69FF02004EE830 /* AppDelegate.m */; };
 		A8DA5FC21B69FF02004EE830 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA5FC11B69FF02004EE830 /* MasterViewController.m */; };
@@ -48,6 +53,17 @@
 		73E2080890FA0C8CDE2D4D7C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A8112B001B6F3A6D00C5BFAB /* CoreDataMantle.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataMantle.pch; sourceTree = "<group>"; };
 		A8112B031B6F524B00C5BFAB /* CoreDataMantleMoGenMigrations.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataMantleMoGenMigrations.xcdatamodel; sourceTree = "<group>"; };
+		A8112B111B6F5A1000C5BFAB /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		A8112B121B6F5A1000C5BFAB /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		A8112B151B6F7CFB00C5BFAB /* CoreDataMantleMoGenMigrations2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataMantleMoGenMigrations2.xcdatamodel; sourceTree = "<group>"; };
+		A84DB1D91BC2406500924C45 /* TestTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTVCell.h; sourceTree = "<group>"; };
+		A84DB1DA1BC2406500924C45 /* TestTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTVCell.m; sourceTree = "<group>"; };
+		A84DB1DC1BC241D900924C45 /* _Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Event.h; sourceTree = "<group>"; };
+		A84DB1DD1BC241D900924C45 /* _Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Event.m; sourceTree = "<group>"; };
+		A84DB1DE1BC241D900924C45 /* _Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Person.h; sourceTree = "<group>"; };
+		A84DB1DF1BC241D900924C45 /* _Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Person.m; sourceTree = "<group>"; };
+		A85613801B6F942200D8C0DB /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		A85613811B6F942200D8C0DB /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		A8DA5FB31B69FF02004EE830 /* CoreDataMantleMoGenMigrations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataMantleMoGenMigrations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8DA5FB71B69FF02004EE830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8DA5FB81B69FF02004EE830 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,6 +113,14 @@
 		A8112B011B6F522800C5BFAB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A84DB1DC1BC241D900924C45 /* _Event.h */,
+				A84DB1DD1BC241D900924C45 /* _Event.m */,
+				A84DB1DE1BC241D900924C45 /* _Person.h */,
+				A84DB1DF1BC241D900924C45 /* _Person.m */,
+				A85613801B6F942200D8C0DB /* Person.h */,
+				A85613811B6F942200D8C0DB /* Person.m */,
+				A8112B111B6F5A1000C5BFAB /* Event.h */,
+				A8112B121B6F5A1000C5BFAB /* Event.m */,
 				A8112B021B6F524B00C5BFAB /* CoreDataMantleMoGenMigrations.xcdatamodeld */,
 			);
 			path = Models;
@@ -132,6 +156,8 @@
 				A8DA5FC11B69FF02004EE830 /* MasterViewController.m */,
 				A8DA5FC31B69FF02004EE830 /* DetailViewController.h */,
 				A8DA5FC41B69FF02004EE830 /* DetailViewController.m */,
+				A84DB1D91BC2406500924C45 /* TestTVCell.h */,
+				A84DB1DA1BC2406500924C45 /* TestTVCell.m */,
 				A8DA5FC61B69FF02004EE830 /* Main.storyboard */,
 				A8DA5FC91B69FF02004EE830 /* Images.xcassets */,
 				A8DA5FCB1B69FF02004EE830 /* LaunchScreen.xib */,
@@ -224,7 +250,7 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = kanybek;
 				TargetAttributes = {
-					A8112B051B6F52C600C5BFAB = {
+					A8112B0A1B6F571000C5BFAB = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
 					A8DA5FB21B69FF02004EE830 = {
@@ -251,7 +277,7 @@
 			targets = (
 				A8DA5FB21B69FF02004EE830 /* CoreDataMantleMoGenMigrations */,
 				A8DA5FD11B69FF02004EE830 /* CoreDataMantleMoGenMigrationsTests */,
-				A8112B051B6F52C600C5BFAB /* Mogenerator */,
+				A8112B0A1B6F571000C5BFAB /* Mogenerator2 */,
 			);
 		};
 /* End PBXProject section */
@@ -277,7 +303,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A8112B091B6F52D700C5BFAB /* ShellScript */ = {
+		A8112B0E1B6F571600C5BFAB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -288,7 +314,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/mogenerator -m CoreDataMantleMoGenMigrations/Models/CoreDataMantleMoGenMigrations.xcdatamodeld -O CoreDataMantleMoGenMigrations/Models --template-var arc=true";
+			shellScript = "/usr/local/bin/mogenerator --model \"${PROJECT_DIR}/CoreDataMantleMoGenMigrations/Models/CoreDataMantleMoGenMigrations.xcdatamodeld/CoreDataMantleMoGenMigrations2.xcdatamodel\" --output-dir \"${PROJECT_DIR}/CoreDataMantleMoGenMigrations/Models/\" --template-var  arc=true\n\n\n";
 		};
 		BACE1F22787E1233527C247F /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -331,7 +357,12 @@
 				A8112B041B6F524B00C5BFAB /* CoreDataMantleMoGenMigrations.xcdatamodeld in Sources */,
 				A8DA5FC21B69FF02004EE830 /* MasterViewController.m in Sources */,
 				A8DA5FBC1B69FF02004EE830 /* AppDelegate.m in Sources */,
+				A84DB1E11BC241D900924C45 /* _Person.m in Sources */,
+				A84DB1DB1BC2406500924C45 /* TestTVCell.m in Sources */,
+				A85613831B6F942200D8C0DB /* Person.m in Sources */,
 				A8DA5FB91B69FF02004EE830 /* main.m in Sources */,
+				A84DB1E01BC241D900924C45 /* _Event.m in Sources */,
+				A8112B141B6F5A1000C5BFAB /* Event.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,14 +404,14 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A8112B071B6F52C600C5BFAB /* Debug */ = {
+		A8112B0C1B6F571000C5BFAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		A8112B081B6F52C600C5BFAB /* Release */ = {
+		A8112B0D1B6F571000C5BFAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -526,11 +557,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A8112B061B6F52C600C5BFAB /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+		A8112B0B1B6F571000C5BFAB /* Build configuration list for PBXAggregateTarget "Mogenerator2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A8112B071B6F52C600C5BFAB /* Debug */,
-				A8112B081B6F52C600C5BFAB /* Release */,
+				A8112B0C1B6F571000C5BFAB /* Debug */,
+				A8112B0D1B6F571000C5BFAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -568,9 +599,10 @@
 		A8112B021B6F524B00C5BFAB /* CoreDataMantleMoGenMigrations.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				A8112B151B6F7CFB00C5BFAB /* CoreDataMantleMoGenMigrations2.xcdatamodel */,
 				A8112B031B6F524B00C5BFAB /* CoreDataMantleMoGenMigrations.xcdatamodel */,
 			);
-			currentVersion = A8112B031B6F524B00C5BFAB /* CoreDataMantleMoGenMigrations.xcdatamodel */;
+			currentVersion = A8112B151B6F7CFB00C5BFAB /* CoreDataMantleMoGenMigrations2.xcdatamodel */;
 			path = CoreDataMantleMoGenMigrations.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
