@@ -11,6 +11,7 @@
 #import "Event.h"
 #import "Person.h"
 #import "TestTVCell.h"
+#import "GCDispatch.h"
 
 @interface MasterViewController ()
 @property (nonatomic, strong) NSMutableArray *items;
@@ -49,6 +50,11 @@
     self.navigationItem.leftBarButtonItem = fetchButton;
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self testBackgroundThreadMethod];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -73,13 +79,95 @@
     [self.tableView endUpdates];
 }
 
+- (void)testBackgroundThreadMethod {
+    
+    [GCDispatch performBlockInMainQueue:^{
+        
+        NSManagedObjectContext *anotherContext = [NSManagedObjectContext MR_contextWithParent:self.localContext];
+        
+        for (NSUInteger idx = 0; idx < 1000; idx ++) {
+            Event *event = [Event MR_createEntityInContext:anotherContext];
+            event.kokInteger = @(arc4random()%(idx + 1));
+            event.timeStamp = [NSDate date];
+            event.kokString = [NSString stringWithFormat:@"%@",@(idx)];
+            
+            
+            Person *person = [Person MR_createEntityInContext:anotherContext];
+            person.name = [NSString stringWithFormat:@"%@",@(idx)];
+            person.surname = [NSString stringWithFormat:@"%@",@(arc4random()%5)];
+            
+            event.person = person;
+        }
+        
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"person.name contains[cd] %@", @"20"];
+        [[Event MR_findAllWithPredicate:predicate inContext:anotherContext] enumerateObjectsUsingBlock:^(Event *obj, NSUInteger idx, BOOL *stop) {
+            NSLog(@"obj.person.name = %@", obj.person.name);
+        }];
+    } completion:^{
+        //[self fetchObjectsFromDatabase];
+    }];
+    
+    return;
+    
+    [GCDispatch performBlockInBackgroundQueue:^{
+    
+        // ---- BEGIN background queue
+        
+        NSManagedObjectContext *backgroundContext = [NSManagedObjectContext MR_contextWithParent:self.localContext];
+        
+        for (NSUInteger idx = 0; idx < 1000; idx ++) {
+            Event *event = [Event MR_createEntityInContext:backgroundContext];
+            event.kokInteger = @(arc4random()%(idx + 1));
+            event.timeStamp = [NSDate date];
+            event.kokString = [NSString stringWithFormat:@"%@",@(idx)];
+            
+            
+            Person *person = [Person MR_createEntityInContext:backgroundContext];
+            person.name = [NSString stringWithFormat:@"%@",@(idx)];
+            person.surname = [NSString stringWithFormat:@"%@",@(arc4random()%5)];
+
+            event.person = person;
+        }
+        
+        // save our changes made in background thread
+        [backgroundContext MR_saveToPersistentStoreAndWait];
+    
+        
+        // ---- END background queue
+        
+    } completion:^{
+        
+        // ----  Main queue
+        
+        [self fetchObjectsFromDatabase];
+    }];
+    // working with background threads
+    
+//    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"person.name matches[cd] %@", @"1"];
+//    Event *event = [[Event MR_findAllWithPredicate:predicate inContext:self.localContext] lastObject];
+//    
+//    [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext){
+//        
+//        Event *someEvent = [event MR_inContext:localContext];
+//        someEvent.kokInteger = @(arc4random()%5);
+//        someEvent.timeStamp = [NSDate date];
+//        someEvent.kokString = [NSString stringWithFormat:@"%@",@"1"];
+//
+//    }];
+}
+
 
 - (void)fetchObjectsFromDatabase {
     
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"person.name contains[cd] %@", @"20"];
+    NSLog(@"%@",@([Event MR_countOfEntitiesWithPredicate:predicate inContext:self.localContext]));
+
     
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"person.name matches[cd] %@", @"1"];
-    NSLog(@"%@",[Event MR_findAllWithPredicate:predicate inContext:self.localContext]);
-    
+    NSLog(@"________________________");
+    [[Event MR_findAllWithPredicate:predicate inContext:self.localContext] enumerateObjectsUsingBlock:^(Event *obj, NSUInteger idx, BOOL *stop) {
+        NSLog(@"obj.person.name = %@", obj.person.name);
+    }];
+    NSLog(@"++++++++++++++++++++++++");
 }
 
 #pragma mark -

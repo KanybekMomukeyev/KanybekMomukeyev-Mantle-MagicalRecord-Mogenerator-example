@@ -26,6 +26,9 @@
 		A84DB1DB1BC2406500924C45 /* TestTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A84DB1DA1BC2406500924C45 /* TestTVCell.m */; };
 		A84DB1E01BC241D900924C45 /* _Event.m in Sources */ = {isa = PBXBuildFile; fileRef = A84DB1DD1BC241D900924C45 /* _Event.m */; };
 		A84DB1E11BC241D900924C45 /* _Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A84DB1DF1BC241D900924C45 /* _Person.m */; };
+		A84DB2041BC3B4BF00924C45 /* GCDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = A84DB2001BC3B4BF00924C45 /* GCDispatch.m */; };
+		A84DB2051BC3B4BF00924C45 /* GCDispatchQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A84DB2021BC3B4BF00924C45 /* GCDispatchQueue.m */; };
+		A84DB2061BC3B4BF00924C45 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A84DB2031BC3B4BF00924C45 /* README.md */; };
 		A85613831B6F942200D8C0DB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A85613811B6F942200D8C0DB /* Person.m */; };
 		A8DA5FB91B69FF02004EE830 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA5FB81B69FF02004EE830 /* main.m */; };
 		A8DA5FBC1B69FF02004EE830 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA5FBB1B69FF02004EE830 /* AppDelegate.m */; };
@@ -62,6 +65,11 @@
 		A84DB1DD1BC241D900924C45 /* _Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Event.m; sourceTree = "<group>"; };
 		A84DB1DE1BC241D900924C45 /* _Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Person.h; sourceTree = "<group>"; };
 		A84DB1DF1BC241D900924C45 /* _Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Person.m; sourceTree = "<group>"; };
+		A84DB1FF1BC3B4BF00924C45 /* GCDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDispatch.h; sourceTree = "<group>"; };
+		A84DB2001BC3B4BF00924C45 /* GCDispatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDispatch.m; sourceTree = "<group>"; };
+		A84DB2011BC3B4BF00924C45 /* GCDispatchQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDispatchQueue.h; sourceTree = "<group>"; };
+		A84DB2021BC3B4BF00924C45 /* GCDispatchQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDispatchQueue.m; sourceTree = "<group>"; };
+		A84DB2031BC3B4BF00924C45 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A85613801B6F942200D8C0DB /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		A85613811B6F942200D8C0DB /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		A8DA5FB31B69FF02004EE830 /* CoreDataMantleMoGenMigrations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataMantleMoGenMigrations.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +134,18 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		A84DB1FE1BC3B4BF00924C45 /* GCDispatch-master */ = {
+			isa = PBXGroup;
+			children = (
+				A84DB1FF1BC3B4BF00924C45 /* GCDispatch.h */,
+				A84DB2001BC3B4BF00924C45 /* GCDispatch.m */,
+				A84DB2011BC3B4BF00924C45 /* GCDispatchQueue.h */,
+				A84DB2021BC3B4BF00924C45 /* GCDispatchQueue.m */,
+				A84DB2031BC3B4BF00924C45 /* README.md */,
+			);
+			path = "GCDispatch-master";
+			sourceTree = "<group>";
+		};
 		A8DA5FAA1B69FF02004EE830 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +169,7 @@
 		A8DA5FB51B69FF02004EE830 /* CoreDataMantleMoGenMigrations */ = {
 			isa = PBXGroup;
 			children = (
+				A84DB1FE1BC3B4BF00924C45 /* GCDispatch-master */,
 				A8112B011B6F522800C5BFAB /* Models */,
 				A8DA5FBA1B69FF02004EE830 /* AppDelegate.h */,
 				A8DA5FBB1B69FF02004EE830 /* AppDelegate.m */,
@@ -357,11 +378,14 @@
 				A8112B041B6F524B00C5BFAB /* CoreDataMantleMoGenMigrations.xcdatamodeld in Sources */,
 				A8DA5FC21B69FF02004EE830 /* MasterViewController.m in Sources */,
 				A8DA5FBC1B69FF02004EE830 /* AppDelegate.m in Sources */,
+				A84DB2061BC3B4BF00924C45 /* README.md in Sources */,
 				A84DB1E11BC241D900924C45 /* _Person.m in Sources */,
 				A84DB1DB1BC2406500924C45 /* TestTVCell.m in Sources */,
 				A85613831B6F942200D8C0DB /* Person.m in Sources */,
+				A84DB2051BC3B4BF00924C45 /* GCDispatchQueue.m in Sources */,
 				A8DA5FB91B69FF02004EE830 /* main.m in Sources */,
 				A84DB1E01BC241D900924C45 /* _Event.m in Sources */,
+				A84DB2041BC3B4BF00924C45 /* GCDispatch.m in Sources */,
 				A8112B141B6F5A1000C5BFAB /* Event.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
