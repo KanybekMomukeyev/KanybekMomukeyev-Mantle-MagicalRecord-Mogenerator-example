@@ -46,13 +46,15 @@
     self.navigationItem.rightBarButtonItem = addButton;
     
     
-    UIBarButtonItem *fetchButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(fetchObjectsFromDatabase)];
+    UIBarButtonItem *fetchButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(complexFetchRequest)];
     self.navigationItem.leftBarButtonItem = fetchButton;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self testBackgroundThreadMethod];
+    //[self testBackgroundThreadMethod];
+    [GRCollectionPerformanceExamples calcaulate];
+    //NSLog(@"%@",[self Fisher_Yates_Shuffling_From_TO_SHAMIL_Array]);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -81,33 +83,33 @@
 
 - (void)testBackgroundThreadMethod {
     
-    [GCDispatch performBlockInMainQueue:^{
-        
-        NSManagedObjectContext *anotherContext = [NSManagedObjectContext MR_contextWithParent:self.localContext];
-        
-        for (NSUInteger idx = 0; idx < 1000; idx ++) {
-            Event *event = [Event MR_createEntityInContext:anotherContext];
-            event.kokInteger = @(arc4random()%(idx + 1));
-            event.timeStamp = [NSDate date];
-            event.kokString = [NSString stringWithFormat:@"%@",@(idx)];
-            
-            
-            Person *person = [Person MR_createEntityInContext:anotherContext];
-            person.name = [NSString stringWithFormat:@"%@",@(idx)];
-            person.surname = [NSString stringWithFormat:@"%@",@(arc4random()%5)];
-            
-            event.person = person;
-        }
-        
-        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"person.name contains[cd] %@", @"20"];
-        [[Event MR_findAllWithPredicate:predicate inContext:anotherContext] enumerateObjectsUsingBlock:^(Event *obj, NSUInteger idx, BOOL *stop) {
-            NSLog(@"obj.person.name = %@", obj.person.name);
-        }];
-    } completion:^{
-        //[self fetchObjectsFromDatabase];
-    }];
-    
-    return;
+//    [GCDispatch performBlockInMainQueue:^{
+//        
+//        NSManagedObjectContext *anotherContext = [NSManagedObjectContext MR_contextWithParent:self.localContext];
+//        
+//        for (NSUInteger idx = 0; idx < 1000; idx ++) {
+//            Event *event = [Event MR_createEntityInContext:anotherContext];
+//            event.kokInteger = @(arc4random()%(idx + 1));
+//            event.timeStamp = [NSDate date];
+//            event.kokString = [NSString stringWithFormat:@"%@",@(idx)];
+//            
+//            
+//            Person *person = [Person MR_createEntityInContext:anotherContext];
+//            person.name = [NSString stringWithFormat:@"%@",@(idx)];
+//            person.surname = [NSString stringWithFormat:@"%@",@(arc4random()%5)];
+//            
+//            event.person = person;
+//        }
+//        
+//        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"person.name contains[cd] %@", @"20"];
+//        [[Event MR_findAllWithPredicate:predicate inContext:anotherContext] enumerateObjectsUsingBlock:^(Event *obj, NSUInteger idx, BOOL *stop) {
+//            NSLog(@"obj.person.name = %@", obj.person.name);
+//        }];
+//    } completion:^{
+//        //[self fetchObjectsFromDatabase];
+//    }];
+//    
+//    return;
     
     [GCDispatch performBlockInBackgroundQueue:^{
     
@@ -117,7 +119,8 @@
         
         for (NSUInteger idx = 0; idx < 1000; idx ++) {
             Event *event = [Event MR_createEntityInContext:backgroundContext];
-            event.kokInteger = @(arc4random()%(idx + 1));
+            //event.kokInteger = @(arc4random()%(idx + 1));
+            event.kokInteger = @(idx + 1);
             event.timeStamp = [NSDate date];
             event.kokString = [NSString stringWithFormat:@"%@",@(idx)];
             
@@ -154,6 +157,16 @@
 //        someEvent.kokString = [NSString stringWithFormat:@"%@",@"1"];
 //
 //    }];
+    
+    
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        // operation that takes for a long time
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // update UI
+            
+        });
+    });
 }
 
 
@@ -169,6 +182,92 @@
     }];
     NSLog(@"++++++++++++++++++++++++");
 }
+
+- (void)complexFetchRequest {
+    
+    // sample using attribute named "position" on entity "Item"
+    
+    NSFetchRequest *request = [NSFetchRequest new];
+    request.entity = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:self.localContext];
+    request.resultType = NSDictionaryResultType;
+
+    // technically not necessary to set fetchLimit = 1, resultType could be (Item *) managed object
+    
+    NSExpression *keyPathExpression = [NSExpression expressionForKeyPath:@"kokInteger"];
+    NSExpression *maxExpression = [NSExpression expressionForFunction:@"max:" arguments: @[ keyPathExpression ]];
+    
+    NSExpressionDescription *expressionDesc = [NSExpressionDescription new];
+    expressionDesc.name = @"maxPosition";
+    expressionDesc.expression = maxExpression;
+    
+    // This changes the return value in valueForKey: below
+    expressionDesc.expressionResultType = NSDictionaryResultType;
+    
+    request.propertiesToFetch = @[ expressionDesc ];
+
+    //NSPredicate *rangePredicate = [NSPredicate predicateWithFormat:@"regionId IN %@", regionIDS];
+    
+    // Execute the fetch.
+    NSError *error = nil;
+    NSArray *objects = [self.localContext executeFetchRequest:request error:&error];
+
+    if (objects && objects.count) {
+        NSLog(@"%@", [objects[0] valueForKey:@"maxPosition"]);
+        NSLog(@"%@", objects[0]);
+    }
+    
+    NSLog(@" stopped ");
+}
+
+- (void)testAggregateAndOtherProperties {
+
+    NSEntityDescription *entity
+        = [NSEntityDescription entityForName:@"Item"
+                      inManagedObjectContext:self.localContext];
+    
+    // attribute to group by
+    NSExpression *keyPath
+        = [NSExpression expressionForKeyPath:@"name"];
+    
+    // aggregate function (count, sum, avg, min, max, etc.)
+    NSExpression *expression
+        = [NSExpression expressionForFunction:@"count:"
+                                arguments:@[keyPath]];
+    
+    
+    /* `NSPropertyDescription` subclass used for fetching
+     needs a name, expression, and expression type */
+    NSExpressionDescription *calc
+        = [[NSExpressionDescription alloc] init];
+    calc.name = @"total";
+    calc.expression = expression;
+    calc.expressionResultType = NSInteger32AttributeType;
+    
+    
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    request.entity = entity;
+    // set grouping attribute
+    request.propertiesToGroupBy = @[@"name"];
+    // fetch only the group name and calculation
+    request.propertiesToFetch = @[@"name", calc];
+    // ask for dictionaries not managed objects
+    request.resultType = NSDictionaryResultType;
+    
+    NSError *e = nil;
+    NSArray *results
+        = [self.localContext executeFetchRequest:request
+                                           error:&e];
+    if (e) {
+        NSLog(@"fetch error: %@", [e userInfo]);
+        abort();
+    }
+    
+    // output each group and total
+    for (NSDictionary *d in results) {
+        NSLog(@"name: %@, total: %@", d[@"name"], d[@"total"]);
+    }
+}
+
 
 #pragma mark -
 #pragma mark - Table View
@@ -191,5 +290,23 @@
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     return YES;
 }
+
+
+- (NSArray *)Fisher_Yates_Shuffling_From_TO_SHAMIL_Array {
+    NSUInteger kHSShamilRandomIntegerTagValue = 100;
+
+    NSMutableArray *cards = [NSMutableArray new];
+    for (NSUInteger idx = 0; idx < kHSShamilRandomIntegerTagValue; idx++) {
+        [cards addObject:[NSNumber numberWithLong:idx]];
+    };
+    
+    for (NSInteger i = [cards count] - 1; i > 0; --i) {
+        [cards exchangeObjectAtIndex:(arc4random() % (i+1)) withObjectAtIndex:i];
+    }
+    
+    return [NSArray arrayWithArray:cards];
+    
+}
+
 
 @end

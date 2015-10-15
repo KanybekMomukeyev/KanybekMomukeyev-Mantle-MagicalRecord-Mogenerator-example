@@ -11,6 +11,15 @@
 
 #import <CoreData/CoreData.h>
 #import <MagicalRecord.h>
+#import "CPPerson.h"
+#import <ARPerformanceScout/ARPerformanceScout.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
+#import "GRAPIController.h"
+#import "GRCommonReactiveExamples.h"
+#import "GRCoreDataPerformanceExamples.h"
+#import "GRCollectionPerformanceExamples.h"
 // Include any system fra mework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 

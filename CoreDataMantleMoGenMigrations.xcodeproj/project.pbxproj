@@ -30,6 +30,11 @@
 		A84DB2051BC3B4BF00924C45 /* GCDispatchQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A84DB2021BC3B4BF00924C45 /* GCDispatchQueue.m */; };
 		A84DB2061BC3B4BF00924C45 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A84DB2031BC3B4BF00924C45 /* README.md */; };
 		A85613831B6F942200D8C0DB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A85613811B6F942200D8C0DB /* Person.m */; };
+		A8A3ADC21BCA54550099B8D7 /* CPPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3ADC11BCA54550099B8D7 /* CPPerson.m */; };
+		A8A3ADC51BCA5F290099B8D7 /* GRCommonReactiveExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3ADC41BCA5F290099B8D7 /* GRCommonReactiveExamples.m */; };
+		A8A3ADC81BCA60B40099B8D7 /* GRCoreDataPerformanceExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3ADC71BCA60B40099B8D7 /* GRCoreDataPerformanceExamples.m */; };
+		A8A3ADCB1BCA60CE0099B8D7 /* GRAPIController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3ADCA1BCA60CE0099B8D7 /* GRAPIController.m */; };
+		A8A3ADCE1BCA6B9D0099B8D7 /* GRCollectionPerformanceExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3ADCD1BCA6B9D0099B8D7 /* GRCollectionPerformanceExamples.m */; };
 		A8DA5FB91B69FF02004EE830 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA5FB81B69FF02004EE830 /* main.m */; };
 		A8DA5FBC1B69FF02004EE830 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA5FBB1B69FF02004EE830 /* AppDelegate.m */; };
 		A8DA5FC21B69FF02004EE830 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA5FC11B69FF02004EE830 /* MasterViewController.m */; };
@@ -72,6 +77,16 @@
 		A84DB2031BC3B4BF00924C45 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A85613801B6F942200D8C0DB /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		A85613811B6F942200D8C0DB /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		A8A3ADC01BCA54550099B8D7 /* CPPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPerson.h; sourceTree = "<group>"; };
+		A8A3ADC11BCA54550099B8D7 /* CPPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPPerson.m; sourceTree = "<group>"; };
+		A8A3ADC31BCA5F290099B8D7 /* GRCommonReactiveExamples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRCommonReactiveExamples.h; sourceTree = "<group>"; };
+		A8A3ADC41BCA5F290099B8D7 /* GRCommonReactiveExamples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRCommonReactiveExamples.m; sourceTree = "<group>"; };
+		A8A3ADC61BCA60B40099B8D7 /* GRCoreDataPerformanceExamples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRCoreDataPerformanceExamples.h; sourceTree = "<group>"; };
+		A8A3ADC71BCA60B40099B8D7 /* GRCoreDataPerformanceExamples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRCoreDataPerformanceExamples.m; sourceTree = "<group>"; };
+		A8A3ADC91BCA60CE0099B8D7 /* GRAPIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRAPIController.h; sourceTree = "<group>"; };
+		A8A3ADCA1BCA60CE0099B8D7 /* GRAPIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRAPIController.m; sourceTree = "<group>"; };
+		A8A3ADCC1BCA6B9D0099B8D7 /* GRCollectionPerformanceExamples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRCollectionPerformanceExamples.h; sourceTree = "<group>"; };
+		A8A3ADCD1BCA6B9D0099B8D7 /* GRCollectionPerformanceExamples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRCollectionPerformanceExamples.m; sourceTree = "<group>"; };
 		A8DA5FB31B69FF02004EE830 /* CoreDataMantleMoGenMigrations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataMantleMoGenMigrations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8DA5FB71B69FF02004EE830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8DA5FB81B69FF02004EE830 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -121,6 +136,8 @@
 		A8112B011B6F522800C5BFAB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A8A3ADC01BCA54550099B8D7 /* CPPerson.h */,
+				A8A3ADC11BCA54550099B8D7 /* CPPerson.m */,
 				A84DB1DC1BC241D900924C45 /* _Event.h */,
 				A84DB1DD1BC241D900924C45 /* _Event.m */,
 				A84DB1DE1BC241D900924C45 /* _Person.h */,
@@ -169,6 +186,14 @@
 		A8DA5FB51B69FF02004EE830 /* CoreDataMantleMoGenMigrations */ = {
 			isa = PBXGroup;
 			children = (
+				A8A3ADC91BCA60CE0099B8D7 /* GRAPIController.h */,
+				A8A3ADCA1BCA60CE0099B8D7 /* GRAPIController.m */,
+				A8A3ADC31BCA5F290099B8D7 /* GRCommonReactiveExamples.h */,
+				A8A3ADC41BCA5F290099B8D7 /* GRCommonReactiveExamples.m */,
+				A8A3ADC61BCA60B40099B8D7 /* GRCoreDataPerformanceExamples.h */,
+				A8A3ADC71BCA60B40099B8D7 /* GRCoreDataPerformanceExamples.m */,
+				A8A3ADCC1BCA6B9D0099B8D7 /* GRCollectionPerformanceExamples.h */,
+				A8A3ADCD1BCA6B9D0099B8D7 /* GRCollectionPerformanceExamples.m */,
 				A84DB1FE1BC3B4BF00924C45 /* GCDispatch-master */,
 				A8112B011B6F522800C5BFAB /* Models */,
 				A8DA5FBA1B69FF02004EE830 /* AppDelegate.h */,
@@ -377,15 +402,20 @@
 				A8DA5FC51B69FF02004EE830 /* DetailViewController.m in Sources */,
 				A8112B041B6F524B00C5BFAB /* CoreDataMantleMoGenMigrations.xcdatamodeld in Sources */,
 				A8DA5FC21B69FF02004EE830 /* MasterViewController.m in Sources */,
+				A8A3ADC51BCA5F290099B8D7 /* GRCommonReactiveExamples.m in Sources */,
 				A8DA5FBC1B69FF02004EE830 /* AppDelegate.m in Sources */,
 				A84DB2061BC3B4BF00924C45 /* README.md in Sources */,
 				A84DB1E11BC241D900924C45 /* _Person.m in Sources */,
+				A8A3ADC81BCA60B40099B8D7 /* GRCoreDataPerformanceExamples.m in Sources */,
+				A8A3ADCE1BCA6B9D0099B8D7 /* GRCollectionPerformanceExamples.m in Sources */,
 				A84DB1DB1BC2406500924C45 /* TestTVCell.m in Sources */,
 				A85613831B6F942200D8C0DB /* Person.m in Sources */,
 				A84DB2051BC3B4BF00924C45 /* GCDispatchQueue.m in Sources */,
+				A8A3ADC21BCA54550099B8D7 /* CPPerson.m in Sources */,
 				A8DA5FB91B69FF02004EE830 /* main.m in Sources */,
 				A84DB1E01BC241D900924C45 /* _Event.m in Sources */,
 				A84DB2041BC3B4BF00924C45 /* GCDispatch.m in Sources */,
+				A8A3ADCB1BCA60CE0099B8D7 /* GRAPIController.m in Sources */,
 				A8112B141B6F5A1000C5BFAB /* Event.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

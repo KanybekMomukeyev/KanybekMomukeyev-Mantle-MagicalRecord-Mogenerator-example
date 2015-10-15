@@ -8,49 +8,71 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
+		</dict>
+		<key>ARPerformanceScout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>MagicalRecord.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>Mantle.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
+		</dict>
+		<key>ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6D7542460A9C33839811AFD09AA01269</key>
+		<key>5352D432641F0656C90741034E32F31E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>90E0ADF0C831AB8C80301ADF4A51A815</key>
+		<key>6951DA9871DA259A9AAA6EFC68AEF8EB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CF3FB7F5F9EB9A850F391319489D267B</key>
+		<key>7717E5732F715FA23DC5955275B4C268</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D6BC59BB00E94F0644195E4E44FF36A0</key>
+		<key>83B9196D85E5AB1B0124EFBF17EA53AC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8B74AD9B2F2AF4D1AFB76ED9EBD83884</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD66367969F0C37EFF8D2A8E2C14B4DD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD7E8CC16B6DABDE88BC9ED247FAF976</key>
 		<dict>
 			<key>primary</key>
 			<true/>
