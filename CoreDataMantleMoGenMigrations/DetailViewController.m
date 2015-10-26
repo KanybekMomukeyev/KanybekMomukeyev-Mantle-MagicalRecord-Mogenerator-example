@@ -8,6 +8,9 @@
 
 #import "DetailViewController.h"
 #import "GRCommonReactiveExamples.h"
+#import <MediaPlayer/MediaPlayer.h>
+#import "PINCache.h"
+
 
 @interface DetailViewController ()
 @end
@@ -16,11 +19,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(someMethodForVideo:)];
+//    self.navigationItem.rightBarButtonItem = addButton;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
+- (void)someMethodForVideo:(id)sender {
+    
+    NSString *filePathStr = [[NSBundle mainBundle] pathForResource:@"example" ofType:@"mp4"];
+    NSURL *fileURL = [NSURL fileURLWithPath:filePathStr];
+    
+    MPMoviePlayerViewController *movieController = [[MPMoviePlayerViewController alloc] initWithContentURL:fileURL];
+    [self presentMoviePlayerViewControllerAnimated:movieController];
+    [movieController.moviePlayer play];
+}
+
+
+- (IBAction)saveVideoToCache:(id)sender {
+    NSString *filePathStr = [[NSBundle mainBundle] pathForResource:@"example" ofType:@"mp4"];
+    NSData *data = [NSData dataWithContentsOfFile:filePathStr];
+    
+    
+    // save to cache video data
+    [[PINCache sharedCache] setObject:data forKey:@"video_key" block:NULL];
+    // [cache writeToPath:(NSString *)path]; 
+}
+
+
+- (IBAction)playVideoFromDocumentsCache:(id)sender {
+    [[PINCache sharedCache] objectForKey:@"video_key"
+                                   block:^(PINCache *cache, NSString *key, id object) {
+                                       NSData *dataVideoFile = (NSData *)object;
+                                       NSLog(@"dataVideoFile.length = %@", @(dataVideoFile.length));
+                                   }];
+}
+
 
 - (void)testMethod1 {
     NSMutableArray *allObjects = [NSMutableArray new];

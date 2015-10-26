@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "98D61C19F2B05186DF01C74C"
+               BlueprintIdentifier = "AAB94746D5671CB7F7436E0C"
                BuildableName = "libARPerformanceScout.a"
                BlueprintName = "ARPerformanceScout"
                ReferencedContainer = "container:Pods.xcodeproj">

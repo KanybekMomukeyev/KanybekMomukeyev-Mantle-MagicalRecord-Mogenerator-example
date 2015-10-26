@@ -53,7 +53,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     //[self testBackgroundThreadMethod];
-    [GRCollectionPerformanceExamples calcaulate];
+    //[GRCollectionPerformanceExamples calcaulate];
     //NSLog(@"%@",[self Fisher_Yates_Shuffling_From_TO_SHAMIL_Array]);
 }
 

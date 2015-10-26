@@ -35,6 +35,11 @@
 		A8A3ADC81BCA60B40099B8D7 /* GRCoreDataPerformanceExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3ADC71BCA60B40099B8D7 /* GRCoreDataPerformanceExamples.m */; };
 		A8A3ADCB1BCA60CE0099B8D7 /* GRAPIController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3ADCA1BCA60CE0099B8D7 /* GRAPIController.m */; };
 		A8A3ADCE1BCA6B9D0099B8D7 /* GRCollectionPerformanceExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3ADCD1BCA6B9D0099B8D7 /* GRCollectionPerformanceExamples.m */; };
+		A8B0FE2C1BD4B6E100AEF27A /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B0FE2B1BD4B6E100AEF27A /* MediaPlayer.framework */; };
+		A8B0FE2E1BD4B6ED00AEF27A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B0FE2D1BD4B6ED00AEF27A /* CoreGraphics.framework */; };
+		A8B0FE351BD4B7BD00AEF27A /* example-en.srt in Resources */ = {isa = PBXBuildFile; fileRef = A8B0FE321BD4B7BD00AEF27A /* example-en.srt */; };
+		A8B0FE361BD4B7BD00AEF27A /* example-es.srt in Resources */ = {isa = PBXBuildFile; fileRef = A8B0FE331BD4B7BD00AEF27A /* example-es.srt */; };
+		A8B0FE371BD4B7BD00AEF27A /* example.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A8B0FE341BD4B7BD00AEF27A /* example.mp4 */; };
 		A8DA5FB91B69FF02004EE830 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA5FB81B69FF02004EE830 /* main.m */; };
 		A8DA5FBC1B69FF02004EE830 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA5FBB1B69FF02004EE830 /* AppDelegate.m */; };
 		A8DA5FC21B69FF02004EE830 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA5FC11B69FF02004EE830 /* MasterViewController.m */; };
@@ -87,6 +92,11 @@
 		A8A3ADCA1BCA60CE0099B8D7 /* GRAPIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRAPIController.m; sourceTree = "<group>"; };
 		A8A3ADCC1BCA6B9D0099B8D7 /* GRCollectionPerformanceExamples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRCollectionPerformanceExamples.h; sourceTree = "<group>"; };
 		A8A3ADCD1BCA6B9D0099B8D7 /* GRCollectionPerformanceExamples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRCollectionPerformanceExamples.m; sourceTree = "<group>"; };
+		A8B0FE2B1BD4B6E100AEF27A /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		A8B0FE2D1BD4B6ED00AEF27A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A8B0FE321BD4B7BD00AEF27A /* example-en.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example-en.srt"; sourceTree = "<group>"; };
+		A8B0FE331BD4B7BD00AEF27A /* example-es.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example-es.srt"; sourceTree = "<group>"; };
+		A8B0FE341BD4B7BD00AEF27A /* example.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.mp4; sourceTree = "<group>"; };
 		A8DA5FB31B69FF02004EE830 /* CoreDataMantleMoGenMigrations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataMantleMoGenMigrations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8DA5FB71B69FF02004EE830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8DA5FB81B69FF02004EE830 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -110,6 +120,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8B0FE2E1BD4B6ED00AEF27A /* CoreGraphics.framework in Frameworks */,
+				A8B0FE2C1BD4B6E100AEF27A /* MediaPlayer.framework in Frameworks */,
 				F0A57FCA91515ED07A010DD3 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +227,9 @@
 		A8DA5FB61B69FF02004EE830 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A8B0FE321BD4B7BD00AEF27A /* example-en.srt */,
+				A8B0FE331BD4B7BD00AEF27A /* example-es.srt */,
+				A8B0FE341BD4B7BD00AEF27A /* example.mp4 */,
 				A8DA5FB71B69FF02004EE830 /* Info.plist */,
 				A8DA5FB81B69FF02004EE830 /* main.m */,
 				A8112B001B6F3A6D00C5BFAB /* CoreDataMantle.pch */,
@@ -242,6 +257,8 @@
 		BF2187D6B5EBC8351E459BD2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A8B0FE2D1BD4B6ED00AEF27A /* CoreGraphics.framework */,
+				A8B0FE2B1BD4B6E100AEF27A /* MediaPlayer.framework */,
 				B4A7291D3986B9B90AE2F03D /* libPods.a */,
 			);
 			name = Frameworks;
@@ -333,8 +350,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8B0FE371BD4B7BD00AEF27A /* example.mp4 in Resources */,
 				A8DA5FC81B69FF02004EE830 /* Main.storyboard in Resources */,
+				A8B0FE351BD4B7BD00AEF27A /* example-en.srt in Resources */,
 				A8DA5FCD1B69FF02004EE830 /* LaunchScreen.xib in Resources */,
+				A8B0FE361BD4B7BD00AEF27A /* example-es.srt in Resources */,
 				A8DA5FCA1B69FF02004EE830 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
